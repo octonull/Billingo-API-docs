@@ -1,0 +1,6 @@
+site_name: Billingo API 2.0 documentation
+pages:
+  - Usage: index.md
+  - Clients: clients.md
+  - Expenses: expenses.md
+theme: readthedocs
