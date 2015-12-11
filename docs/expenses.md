@@ -5,7 +5,9 @@ JSON Schema: [https://www.billingo.hu/json/schema/expense.json](https://www.bill
 
 ## List of expenses
 
-#### Endpoint: `GET /expenses`
+### Endpoint
+
+`GET /expenses`
 
 ### Response 200 (application/json)
 
@@ -52,11 +54,11 @@ JSON Schema: [https://www.billingo.hu/json/schema/expense.json](https://www.bill
 }
 ```
 
-##
-
 ## List of available expense categories
 
-### Endpoint: `GET /expenses/categories/{langcode}`
+### Endpoint
+
+`GET /expenses/categories/{langcode}`
 
 ### Parameters
 
@@ -81,9 +83,11 @@ JSON Schema: [https://www.billingo.hu/json/schema/expense.json](https://www.bill
 }
 ```
 
-## `POST /expenses`
+## Create Expense object
 
-Create Expense object
+### Endpoint
+
+`POST /expenses`
 
 ### Request (application/json)
 ```json
@@ -120,9 +124,11 @@ Create Expense object
 }
 ```
 
-## `PUT /expenses/{id}`
+## Update Expense object
 
-Update Expense object
+### Endpoint
+
+`PUT /expenses/{id}`
 
 ### Parameters
 - `id` (integer, required) - The ID of the Expense object
