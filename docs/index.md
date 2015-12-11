@@ -1,5 +1,13 @@
 # Billingo API 2.0 Usage
 
+## API URL
+
+This API enables subscribers of Billingo to connect third-party applications (ie. their e-commerce site)
+and generate electronic or traditional invoices automatically.
+
+The Billingo API is available at the following URL: `https://www.billingo.hu/api`
+
+
 ## Changes since 1.0
 
 We have rewritten the whole API backend to be tied much closer to the main app.
