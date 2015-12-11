@@ -4,7 +4,11 @@ Clients object representation.
 
 JSON Schema: [https://www.billingo.hu/json/schema/client.json](https://www.billingo.hu/json/schema/client.json)
 
-## `GET /clients/{id}`
+## List of clients
+
+### Endpoint
+
+`GET /clients/{id}`
 
 ### Parameters
 - `id` (integer, optional) - If set, only return the given client object
@@ -45,9 +49,14 @@ JSON Schema: [https://www.billingo.hu/json/schema/client.json](https://www.billi
 }
 ```
 
-## `POST /clients`
+## Create a client
 
-Create a client.
+### Endpoint
+
+`POST /clients`
+
+### Notes
+
 If the name and (if given) the taxcode is the same as an already saved client, without modifying it, we return
 the original client object.
 
@@ -101,12 +110,19 @@ the original client object.
 }
 ```
 
-## `PUT /clients/{id}`
+## Update a client
 
-Update a client with the given ID. On success it returns the modified client object.
+### Endpoint
+
+`PUT /clients/{id}`
 
 ### Parameters
 - `id` (integer, required) - The ID of the Client object
+
+
+### Notes
+
+On success it returns the modified client object.
 
 ### Request (application/json)
 
@@ -159,7 +175,11 @@ Update a client with the given ID. On success it returns the modified client obj
 }
 ```
 
-## `DELETE /clients/{id}`
+## Delete client
+
+### Endpoint
+
+`DELETE /clients/{id}`
 
 ### Parameters
 - `id` (integer, required) - The ID of the Client object
