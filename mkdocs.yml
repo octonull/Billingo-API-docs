@@ -1,6 +1,10 @@
 site_name: Billingo API 2.0 documentation
 pages:
   - Usage: index.md
+  - Invoices: invoices.md
   - Clients: clients.md
   - Expenses: expenses.md
+  - Bank accounts: bank_accounts.md
+  - Payment methods: payment_methods.md
+  - VAT: vat.md
 theme: readthedocs
