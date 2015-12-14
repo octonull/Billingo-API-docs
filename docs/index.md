@@ -86,3 +86,6 @@ following attributes:
 
 - `success`: always `false` on error
 - `error`: Textual representation of the error
+
+If failing to insert or update objects (when JSON schema is otherwise valid), we
+also return a `errors` array with the failures.
