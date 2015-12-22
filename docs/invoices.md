@@ -133,6 +133,13 @@ JSON schemas:
 }
 ```
 
+### Invoice types
+
+- 0: Draft
+- 1: Proforma invoice
+- 2: Not used, reserved
+- 3: Normal invoice
+
 ## Cancel the invoice
 
 ### Endpoint
