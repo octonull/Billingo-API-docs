@@ -89,7 +89,6 @@ JSON schemas:
     "fulfillment_date": "2015-12-12",
     "due_date": "2015-12-20",
     "payment_method": 1,
-    "total": "4445.000",
     "comment": "",
     "template_lang_code": "hu",
     "electronic_invoice": 1,
