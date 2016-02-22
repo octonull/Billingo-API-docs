@@ -7,6 +7,8 @@ JSON schemas:
 - Invoice items: [https://www.billingo.hu/json/schema/invoice_item.json](https://www.billingo.hu/json/schema/invoice_item.json)
 - Invoice payment: [https://www.billingo.hu/json/schema/invoice_pay.json](https://www.billingo.hu/json/schema/invoice_pay.json)
 
+
+
 ## Show the invoices
 
 ### Endpoint
@@ -76,6 +78,8 @@ JSON schemas:
 }
 ```
 
+
+
 ## Save a new invoice
 
 ### Endpoint
@@ -138,6 +142,37 @@ JSON schemas:
 - 1: Proforma invoice
 - 2: Not used, reserved
 - 3: Normal invoice
+
+
+
+## Create download link
+
+### Endpoint
+
+`GET /invoices/{id}/code`
+
+### Parameters
+
+- `id` (string, required) - The Invoice object ID
+
+### Response 200 (application/json)
+
+```json
+{
+  "success": true,
+  "data": {
+    "code": "uiowerTI"
+  }
+}
+```
+
+### Access URL
+
+`https://www.billingo.hu/access/c:{code}`
+
+
+
+
 
 ## Cancel the invoice
 
