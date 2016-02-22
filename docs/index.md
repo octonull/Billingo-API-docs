@@ -9,8 +9,6 @@ The Billingo API is available at the following URL: `https://www.billingo.hu/api
 
 
 
-
-
 ## Changes since 1.0
 
 We have rewritten the whole API backend to be tied much closer to the main app.
@@ -21,10 +19,9 @@ Because of this we had to change a lot since the last version.
 - We opened a lot of new endpoints for the public (ie. sending invoices in email)
 
 
-
 ## Libraries
 
-We are working hard on providing easy to use libraries for different languages and frameworks. 
+We are working hard on providing easy to use libraries for different languages and frameworks.
 
 
 
@@ -83,9 +80,11 @@ We recommend that you make yourself familiar with JWT before using our API.
 
 ### Example header
 
-`Authorization: Beamer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMWI3YzhkZDM0YTkwYzFkMzI4MDgyMTQ2NzJiY2QyZSIsImlhdCI6MTQ0NzkyOTU0OCwiZXhwIjoxNDQ3OTI5NTQ4fQ.2frxLVGY4QDnB7mG1XWnWvAM36LSU58nocU1Ws5Sjzo`
+`Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMWI3YzhkZDM0YTkwYzFkMzI4MDgyMTQ2NzJiY2QyZSIsImlhdCI6MTQ0NzkyOTU0OCwiZXhwIjoxNDQ3OTI5NTQ4fQ.2frxLVGY4QDnB7mG1XWnWvAM36LSU58nocU1Ws5Sjzo`
 
-*Note: The header value always starts with the text Beamer followed by a space and then the JWT*
+**Important: In the earlier editions we made a typo calling the Bearer text as "Beamer", the API will work with both texts!**
+
+*Note: The header value always starts with the text Bearer followed by a space and then the JWT*
 
 
 
@@ -106,7 +105,6 @@ can be either `true` or `false`.
     - `type`: The type name for the response, for example a call on `/clients` will return `clients`
     - `data`: An array with the response object(s)
 - `DELETE` request only contains `success` attribute.
-
 
 
 ## Errors
