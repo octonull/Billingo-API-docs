@@ -106,7 +106,8 @@ JSON schemas:
             "vat_id": 1,
             "qty": 1,
             "net_unit_price": 3500,
-            "unit": "pc"
+            "unit": "pc",
+	        "item_comment": "Item comment"
         }
     ]
 }
