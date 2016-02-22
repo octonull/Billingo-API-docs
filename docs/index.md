@@ -30,9 +30,8 @@ We are working hard on providing easy to use libraries for different languages a
 
 ### Billingo API Connector
 
-Packagist: https://packagist.org/packages/voov/billingo-api-connector
-
-GitHub: https://github.com/voov/Billingo-API-Connector
+- Packagist: [https://packagist.org/packages/voov/billingo-api-connector](https://packagist.org/packages/voov/billingo-api-connector)
+- GitHub: [https://github.com/voov/Billingo-API-Connector](https://github.com/voov/Billingo-API-Connector)
 
 Built on top of Guzzle and the Firebase JWT library, it provides you an easy to use PHP library to connect to the Billingo API services.
 
