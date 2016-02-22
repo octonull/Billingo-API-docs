@@ -8,6 +8,9 @@ and generate electronic or traditional invoices automatically.
 The Billingo API is available at the following URL: `https://www.billingo.hu/api`
 
 
+
+
+
 ## Changes since 1.0
 
 We have rewritten the whole API backend to be tied much closer to the main app.
@@ -17,10 +20,30 @@ Because of this we had to change a lot since the last version.
 - We have standardized as much as we could including responses, JSON requests and authentication (more about this below)
 - We opened a lot of new endpoints for the public (ie. sending invoices in email)
 
+
+
+## Libraries
+
+We are working hard on providing easy to use libraries for different languages and frameworks. 
+
+
+
+### Billingo API Connector
+
+Packagist: https://packagist.org/packages/voov/billingo-api-connector
+
+GitHub: https://github.com/voov/Billingo-API-Connector
+
+Built on top of Guzzle and the Firebase JWT library, it provides you an easy to use PHP library to connect to the Billingo API services.
+
+
+
 ## Authentication
 
 The authentication method changed to JSON Web Tokens (JWT for short). The authentication should
 be sent in the `Authorization` HTTP header for **every** call.
+
+
 
 ### JSON Web Tokens
 
@@ -57,17 +80,23 @@ on the following links:
 
 We recommend that you make yourself familiar with JWT before using our API.
 
+
+
 ### Example header
 
 `Authorization: Beamer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMWI3YzhkZDM0YTkwYzFkMzI4MDgyMTQ2NzJiY2QyZSIsImlhdCI6MTQ0NzkyOTU0OCwiZXhwIjoxNDQ3OTI5NTQ4fQ.2frxLVGY4QDnB7mG1XWnWvAM36LSU58nocU1Ws5Sjzo`
 
 *Note: The header value always starts with the text Beamer followed by a space and then the JWT*
 
+
+
 ## JSON Schema
 
 We are using [JSON Schema](http://json-schema.org/) (draft v4.) which describe the JSON objects you should send with
 `POST` and `PUT` requests.
 The link to the schemas are found below, at their appropriate places.
+
+
 
 ## Successful responses
 
@@ -78,6 +107,8 @@ can be either `true` or `false`.
     - `type`: The type name for the response, for example a call on `/clients` will return `clients`
     - `data`: An array with the response object(s)
 - `DELETE` request only contains `success` attribute.
+
+
 
 ## Errors
 
