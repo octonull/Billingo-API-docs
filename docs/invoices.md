@@ -227,7 +227,7 @@ JSON schemas:
 ## Pay the full or partial amount of the invoice
 
 ### Endpoint
-`GET /invoices/{id}/pay`
+`POST /invoices/{id}/pay`
 
 
 ### Parameters
