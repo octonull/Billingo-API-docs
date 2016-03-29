@@ -57,3 +57,46 @@ VAT object representation
    ]
 }
 ```
+
+
+## Get EU VAT code
+
+EU based companies whom sell services to EU countries need to apply the buyer country's VAT to the full price. 
+
+### Endpoint
+
+`GET /vat/eu`
+
+### Query parameters
+
+- `country` (**required**) the ISO3166 country code given by the user (eg. DE)
+- `ip_address` (**required**) the IP address of the user
+- `business_country` (**required**) the ISO3166 country code for the operating business
+- `vat_code` (*optional*) the EU VAT code for the user (eg. DE13816200)
+
+### Response 200 (application/json)
+
+```json
+{
+  "success": true,
+  "data": {
+    "set_country": "DE",
+    "ip_country": "HU",
+    "country_match": false,
+    "company": null,
+    "tax_rate": 0.19,
+    "billingo_vat": {
+      "id": 13,
+      "value": "0.19",
+      "description": "19.0% - DE"
+    }
+  }
+}
+```
+
+- `ip_country` the country code from the given IP
+- `country_match` boolean value, true if the given country code and the IP country matches
+- `company` returns company data from the EU registry or null if `vat_code` is not set
+- `tax_rate` the tax rate for the set country
+- `billingo_vat` will return a Billingo vat object that can be used to save an invoice
+

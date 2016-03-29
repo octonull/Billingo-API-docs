@@ -71,7 +71,13 @@ JSON schemas:
                   "swift":"",
                   "account_no":""
                }
-            }
+            },
+           "payment_method": {
+             "id": 2,
+             "lang_code": "hu",
+             "name": "Átutalás",
+             "advance_paid": "0"
+        	}
          }
       }
    ]
@@ -97,6 +103,7 @@ JSON schemas:
     "template_lang_code": "hu",
     "electronic_invoice": 1,
     "currency": "HUF",
+	"exchange_rate": 250.0,
     "client_uid": 115387686,
     "block_uid": 1263576876,
     "type": 3,
@@ -112,6 +119,8 @@ JSON schemas:
     ]
 }
 ```
+
+*Note: exchange rate parameter is optional. If not given, the currency daily rate will be downloaded from one of the providers*
 
 ### Response 200 (application/json)
 

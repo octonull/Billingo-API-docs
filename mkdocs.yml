@@ -7,4 +7,5 @@ pages:
   - Bank accounts: bank_accounts.md
   - Payment methods: payment_methods.md
   - VAT: vat.md
+  - Currency: currency.md
 theme: readthedocs
