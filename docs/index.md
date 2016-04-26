@@ -24,7 +24,6 @@ Because of this we had to change a lot since the last version.
 We are working hard on providing easy to use libraries for different languages and frameworks.
 
 
-
 ### Billingo API Connector
 
 - Packagist: [https://packagist.org/packages/voov/billingo-api-connector](https://packagist.org/packages/voov/billingo-api-connector)
@@ -32,7 +31,28 @@ We are working hard on providing easy to use libraries for different languages a
 
 Built on top of Guzzle and the Firebase JWT library, it provides you an easy to use PHP library to connect to the Billingo API services.
 
+### Billingo Connector for Laravel
 
+- Packagist: [https://packagist.org/packages/voov/billingo-api-laravel](https://packagist.org/packages/voov/billingo-api-laravel)
+- GitHub: [https://github.com/voov/Billingo-API-Laravel](https://github.com/voov/Billingo-API-Laravel)
+
+A service provider and facade for the Laravel Framework 5+
+
+### Billingo for WooCommerce
+
+- WordPress Plugin Directory: [https://wordpress.org/plugins/billingo/](https://wordpress.org/plugins/billingo/)
+
+Create and send your invoices directly from WooCommerce with the help of this plugin.
+
+## Third-party libraries
+
+Libraries created by third parties.
+
+### Billingo Node.JS
+
+- GitHub: [https://github.com/ghostmonitor/node-billingo](https://github.com/ghostmonitor/node-billingo)
+
+Created by [GhostMonitor.com](https://ghostmonitor.com/)
 
 ## Authentication
 
