@@ -7,6 +7,11 @@ VAT object representation
 
 `GET /vat`
 
+### Query parameters
+
+- `v` (*optional*) The value to filter for (eg. 0.27)
+- `d` (*optional*) The description to filter for (eg. AM)
+
 ### Response 200 (application/json)
 
 ```json
@@ -61,7 +66,7 @@ VAT object representation
 
 ## Get EU VAT code
 
-EU based companies whom sell services to EU countries need to apply the buyer country's VAT to the full price. 
+EU based companies whom sell services to EU countries need to apply the buyer country's VAT to the full price.
 
 ### Endpoint
 
@@ -99,4 +104,3 @@ EU based companies whom sell services to EU countries need to apply the buyer co
 - `company` returns company data from the EU registry or null if `vat_code` is not set
 - `tax_rate` the tax rate for the set country
 - `billingo_vat` will return a Billingo vat object that can be used to save an invoice
-
