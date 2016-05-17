@@ -146,6 +146,9 @@ JSON schemas:
 }
 ```
 
+### Setting by gross price
+Every item can be set by the gross price. The API will automatically calculate the net unit price from the gross unit price based on the given VAT ID. Set the `gross_unit_price` parameter instead of the `net_unit_price`.  
+
 ### Invoice types
 
 - 0: Draft
