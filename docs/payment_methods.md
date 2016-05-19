@@ -24,15 +24,6 @@ Payment methods are currently read only, so only `GET` request is allowed!
    "type":"payment_methods",
    "data":[
       {
-         "id":"3",
-         "attributes":{
-            "id":"3",
-            "lang_code":"en",
-            "name":"Wiretransfer",
-            "advance_paid":"0"
-         }
-      },
-      {
          "id":"2",
          "attributes":{
             "id":"2",
