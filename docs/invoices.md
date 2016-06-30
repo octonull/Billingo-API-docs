@@ -107,6 +107,7 @@ JSON schemas:
     "client_uid": 115387686,
     "block_uid": 1263576876,
     "type": 3,
+    "round_to": 0,
     "items": [
         {
             "description": "Test Item",
@@ -121,6 +122,8 @@ JSON schemas:
 ```
 
 *Note: exchange rate parameter is optional. If not given, the currency daily rate will be downloaded from one of the providers*
+
+*Note: round_to parameter is optional. One of [0, 1, 5, 10], defaults to 0 -> no rounding.*
 
 ### Response 200 (application/json)
 
