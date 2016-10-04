@@ -38,7 +38,7 @@ JSON schemas:
             "comment":"",
             "currency":"HUF",
             "client_uid":115387686,
-            "block_uid":1263576876,
+            "block_uid":0,
             "uid":1938103373,
             "items":[
                {
@@ -103,9 +103,9 @@ JSON schemas:
     "template_lang_code": "hu",
     "electronic_invoice": 1,
     "currency": "HUF",
-	"exchange_rate": 250.0,
+    "exchange_rate": 250.0,
     "client_uid": 115387686,
-    "block_uid": 1263576876,
+    "block_uid": 0,
     "type": 3,
     "round_to": 0,
     "items": [
@@ -120,6 +120,8 @@ JSON schemas:
     ]
 }
 ```
+
+**Important:** The `block_uid` parameter should _always_ be `0` or the chosen invoice block's ID!
 
 *Note: exchange rate parameter is optional. If not given, the currency daily rate will be downloaded from one of the providers*
 
