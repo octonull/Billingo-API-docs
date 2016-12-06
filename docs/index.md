@@ -1,5 +1,7 @@
 # Billingo API v2 Usage
 
+Current version: **2.1**
+
 ## API URL
 
 This API enables subscribers of Billingo to connect third-party applications (ie. their e-commerce site)
