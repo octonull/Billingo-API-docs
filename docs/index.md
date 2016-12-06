@@ -1,4 +1,4 @@
-# Billingo API 2.0 Usage
+# Billingo API v2 Usage
 
 ## API URL
 
@@ -7,7 +7,11 @@ and generate electronic or traditional invoices automatically.
 
 The Billingo API is available at the following URL: `https://www.billingo.hu/api`
 
+## Changes since 2.0
 
+- Added pagination to data returned from the `Invoices` , `Clients` and `Expenses` endpoints. 
+
+  ​
 
 ## Changes since 1.0
 

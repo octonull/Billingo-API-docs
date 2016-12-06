@@ -7,7 +7,12 @@ JSON Schema: [https://www.billingo.hu/json/schema/expense.json](https://www.bill
 
 ### Endpoint
 
-`GET /expenses`
+`GET /expenses?page=1&max_per_page=20`
+
+### Parameters
+
+- `page` (integer, optional, default=1) - If set, return the given page
+- `max_per_page` (integer, optional, default=20) - Sets the maximum number of results to return. Absolute maximum is 50!
 
 ### Response 200 (application/json)
 

@@ -1,4 +1,4 @@
-site_name: Billingo API 2.0 documentation
+site_name: Billingo API v2 documentation
 pages:
   - Usage: index.md
   - Invoices: invoices.md
