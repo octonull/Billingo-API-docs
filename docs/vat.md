@@ -75,7 +75,7 @@ EU based companies whom sell services to EU countries need to apply the buyer co
 ### Query parameters
 
 - `country` (**required**) the ISO3166 country code given by the user (eg. DE)
-- `ip_address` (**required**) the IP address of the user
+- `ip` (**required**) the IP address of the user
 - `business_country` (**required**) the ISO3166 country code for the operating business
 - `vat_code` (*optional*) the EU VAT code for the user (eg. DE13816200)
 
