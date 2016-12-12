@@ -108,10 +108,11 @@ JSON schemas:
     "electronic_invoice": 1,
     "currency": "HUF",
     "exchange_rate": 250.0,
-    "client_uid": 115387686,
+    "client_uid": 000000000,
     "block_uid": 0,
     "type": 3,
     "round_to": 0,
+  	"bank_account_uid": 000000000,
     "items": [
         {
             "description": "Test Item",
