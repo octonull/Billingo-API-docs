@@ -1,6 +1,6 @@
 # Billingo API v2 Usage
 
-Current version: **2.1**
+Current version: **2.1.1**
 
 ## API URL
 
