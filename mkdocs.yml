@@ -9,5 +9,6 @@ pages:
   - Payment methods: payment_methods.md
   - VAT: vat.md
   - Currency: currency.md
+  - Libraries: libraries.md
   - Changelog: changelog.md
 theme: readthedocs
