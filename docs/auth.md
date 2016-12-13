@@ -40,8 +40,6 @@ on the following links:
 
 We recommend that you make yourself familiar with JWT before using our API.
 
-
-
 ### Example header
 
 `Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMWI3YzhkZDM0YTkwYzFkMzI4MDgyMTQ2NzJiY2QyZSIsImlhdCI6MTQ0NzkyOTU0OCwiZXhwIjoxNDQ3OTI5NTQ4fQ.2frxLVGY4QDnB7mG1XWnWvAM36LSU58nocU1Ws5Sjzo`
@@ -49,3 +47,19 @@ We recommend that you make yourself familiar with JWT before using our API.
 **Important: In the earlier editions we made a typo calling the Bearer text as "Beamer", the API will work with both texts!**
 
 *Note: The header value always starts with the text Bearer followed by a space and then the JWT*
+
+
+
+## Server time
+
+There can be a time difference between your server and ours. If you get errors messages saying that the signature is expired, you should check both times, and adjust your `iat` and `exp` parameters accordingly. You can use the `leeway` parameter in the official PHP library.
+
+You can also check the Billingo server time at the following URL:
+
+[https://www.billingo.hu/time](https://www.billingo.hu/time)
+
+or to get the data in a JSON format:
+
+https://www.billingo.hu/time?type=json
+
+Both of these endpoints are available without authentication
