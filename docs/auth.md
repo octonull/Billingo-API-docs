@@ -60,6 +60,6 @@ You can also check the Billingo server time at the following URL:
 
 or to get the data in a JSON format:
 
-https://www.billingo.hu/time?type=json
+[https://www.billingo.hu/time?type=json](https://www.billingo.hu/time?type=json)
 
 Both of these endpoints are available without authentication
