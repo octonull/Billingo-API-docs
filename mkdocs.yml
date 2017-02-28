@@ -3,6 +3,7 @@ pages:
   - Usage: index.md
   - Authentication: auth.md
   - Invoices: invoices.md
+  - Invoice Query: query.md
   - Clients: clients.md
   - Expenses: expenses.md
   - Bank accounts: bank_accounts.md
