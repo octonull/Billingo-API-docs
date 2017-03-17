@@ -194,8 +194,19 @@ Every item can be set by the gross price. The API will automatically calculate t
 `https://www.billingo.hu/access/c:{code}`
 
 
+## Download invoice
 
+### Endpoint
 
+`GET /invoices/{id}/download`
+
+### Parameters
+
+- `id` (string, required) - The Invoice object ID
+
+### Response 200 (application/pdf)
+
+The invoice PDF is returned
 
 ## Cancel the invoice
 
