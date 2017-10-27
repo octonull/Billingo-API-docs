@@ -296,7 +296,34 @@ The invoice PDF is returned
 ### Response 200 (application/json)
 
 ```json
-{"success":true}
+{
+    "success": true,
+    "data": {
+        "fully_paid": true,
+        "outstanding": 0
+    }
+}
+```
+
+## Undo payment of the invoice
+
+### Endpoint
+`DELETE /invoices/{id}/pay`
+
+
+### Parameters
+- `id` (string, required) - The Invoice object ID
+
+### Response 200 (application/json)
+
+```json
+{
+    "success":true,
+    "data": {
+        "fully_paid": false,
+        "outstanding": 5000
+    }
+}
 ```
 
 ## Get the available invoice blocks
