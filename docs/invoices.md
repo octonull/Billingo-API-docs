@@ -193,6 +193,23 @@ Every item can be set by the gross price. The API will automatically calculate t
 
 `https://www.billingo.hu/access/c:{code}`
 
+## Generate normal invoice from proforma invoice
+
+### Endpoint
+
+`GET /invoices/{id}/generate`
+
+### Parameters
+
+- `id` (string, required) - The proforma invoice object ID
+
+### Response 200 (application/json)
+
+```json
+{
+  "success": true,
+}
+```
 
 ## Download invoice
 
