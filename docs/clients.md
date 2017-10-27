@@ -21,35 +21,46 @@ JSON Schema: [https://www.billingo.hu/json/schema/client.json](https://www.billi
 
 ```json
 {
-   "success":true,
-   "type":"clients",
-   "data":[
-      {
-         "id":1278331717,
-         "attributes":{
-            "name":"Gigazoom LLC.",
-            "email":"rbrooks5@amazon.com",
-            "taxcode":"",
-            "billing_address":{
-               "street_name":"Moulton",
-               "street_type":"Terrace",
-               "house_nr":"2797",
-               "block":"",
-               "entrance":"",
-               "floor":"",
-               "door":"",
-               "city":"Preston",
-               "postcode":"PR1",
-               "country":"United Kingdom"
-            },
-            "bank":{
-               "iban":"",
-               "swift":"",
-               "account_no":""
+    "success":true,
+    "type":"clients",
+    "data":[
+        {
+            "id":1278331717,
+            "attributes":{
+                "name":"Gigazoom LLC.",
+                "email":"rbrooks5@amazon.com",
+                "taxcode":"",
+                "type": "",
+                "fokonyv_szam": "",
+                "phone": "",
+                "defaults": {
+                    "payment_method":"1",
+                    "electronic_invoice":"0",
+                    "invoice_due_days":"3",
+                    "invoice_currency":"HUF",
+                    "invoice_template_lang_code":"hu"
+                },
+                "billing_address":{
+                    "street_name":"Moulton",
+                    "street_type":"Terrace",
+                    "house_nr":"2797",
+                    "block":"",
+                    "entrance":"",
+                    "floor":"",
+                    "door":"",
+                    "city":"Preston",
+                    "postcode":"PR1",
+                    "country":"United Kingdom",
+                    "district": ""
+                },
+                "bank":{
+                    "iban":"",
+                    "swift":"",
+                    "account_no":""
+                }
             }
-         }
-      }
-   ]
+        }
+    ]
 }
 ```
 
@@ -77,43 +88,75 @@ if it exists or not.
         "street_name": "Moulton",
         "street_type": "Terrace",
         "house_nr": "2797",
+        "block": "A", 
+        "entrance": "B", 
+        "floor": "3.", 
+        "door": "17",
         "city": "Preston",
         "postcode": "PR1",
+        "district": "XII", 
         "country": "United Kingdom"
-    }
+    },
+    "phone": "",
+    "bank": {
+        "account_no": "12345678-12345678-12345678", 
+        "iban": "", 
+        "swift": ""
+    },
+    "fokonyv_szam": "", 
+    "type": "2", 
+    "defaults": {
+        "payment_method":"1",
+        "electronic_invoice":"0",
+        "invoice_due_days":"3",
+        "invoice_currency":"HUF",
+        "invoice_template_lang_code":"hu"
+    }    
 }
 ```
 
 ### Response 200 (application/json)
 
 ```json
-{  
-   "success":true,
-   "type":"clients",
-   "data":{  
-      "id":1278331717,
-      "attributes":{  
-         "name":"Gigazoom LLC.",
-         "email":"rbrooks5@amazon.com",
-         "billing_address":{  
-            "street_name":"Moulton",
-            "street_type":"Terrace",
-            "house_nr":"2797",
-            "block":"",
-            "entrance":"",
-            "floor":"",
-            "door":"",
-            "city":"Preston",
-            "postcode":"PR1",
-            "country":"United Kingdom"
-         },
-         "bank":{  
-            "iban":"",
-            "swift":"",
-            "account_no":""
-         }
-      }
-   }
+{
+    "success": true,
+    "type": "clients",
+    "data": {
+        "id": 1963092040,
+        "attributes": {
+            "name": "Gigazoom LLC.2",
+            "email": "rbrooks5@amazon.com",
+            "taxcode": "12345678-0-00",
+            "type": 2,
+            "fokonyv_szam": "",
+            "phone": "00123456789",
+            "defaults": {
+                "payment_method": "1",
+                "electronic_invoice": "0",
+                "invoice_due_days": "3",
+                "invoice_currency": "HUF",
+                "invoice_template_lang_code": "hu"
+            },
+            "billing_address": {
+                "street_name": "Moulton",
+                "street_type": "Terrace",
+                "house_nr": "2797",
+                "block": "A",
+                "entrance": "B",
+                "floor": "3.",
+                "door": "17",
+                "city": "Preston",
+                "postcode": "PR1",
+                "district": "XII",
+                "country": "Egyesült Királyság"
+            },
+            "bank": {
+                "iban": "",
+                "swift": "",
+                "account_no": "12345678-12345678-12345678"
+            }
+        }
+    }
 }
 ```
 
@@ -137,48 +180,81 @@ On success it returns the modified client object.
 {
     "name": "Gigazoom LLC.",
     "email": "rbrooks5@amazon.com",
+    "taxcode": "123456",
+    "force": false,
     "billing_address": {
         "street_name": "Moulton",
         "street_type": "Terrace",
         "house_nr": "2797",
+        "block": "A", 
+        "entrance": "B", 
+        "floor": "3.", 
+        "door": "17",
         "city": "Preston",
-        "postcode": "PR2",
+        "postcode": "PR1",
+        "district": "XII", 
         "country": "United Kingdom"
-    }
+    },
+    "phone": "",
+    "bank": {
+        "account_no": "12345678-12345678-12345678", 
+        "iban": "", 
+        "swift": ""
+    },
+    "fokonyv_szam": "", 
+    "type": "2", 
+    "defaults": {
+        "payment_method":"1",
+        "electronic_invoice":"0",
+        "invoice_due_days":"3",
+        "invoice_currency":"HUF",
+        "invoice_template_lang_code":"hu"
+    }    
 }
 ```
 
 ### Response 200 (application/json)
 
 ```json
-{  
-   "success":true,
-   "type":"clients",
-   "data":{  
-      "id":1278331717,
-      "attributes":{  
-         "name":"Gigazoom LLC.",
-         "email":"rbrooks5@amazon.com",
-         "taxcode":"",
-         "billing_address":{  
-            "street_name":"Moulton",
-            "street_type":"Terrace",
-            "house_nr":"2797",
-            "block":"",
-            "entrance":"",
-            "floor":"",
-            "door":"",
-            "city":"Preston",
-            "postcode":"PR2",
-            "country":"United Kingdom"
-         },
-         "bank":{  
-            "iban":"",
-            "swift":"",
-            "account_no":""
-         }
-      }
-   }
+{
+    "success": true,
+    "type": "clients",
+    "data": {
+        "id": 1963092040,
+        "attributes": {
+            "name": "Gigazoom LLC.2",
+            "email": "rbrooks5@amazon.com",
+            "taxcode": "12345678-0-00",
+            "type": 2,
+            "fokonyv_szam": "",
+            "phone": "00123456789",
+            "defaults": {
+                "payment_method": "1",
+                "electronic_invoice": "0",
+                "invoice_due_days": "3",
+                "invoice_currency": "HUF",
+                "invoice_template_lang_code": "hu"
+            },
+            "billing_address": {
+                "street_name": "Moulton",
+                "street_type": "Terrace",
+                "house_nr": "2797",
+                "block": "A",
+                "entrance": "B",
+                "floor": "3.",
+                "door": "17",
+                "city": "Preston",
+                "postcode": "PR1",
+                "district": "XII",
+                "country": "Egyesült Királyság"
+            },
+            "bank": {
+                "iban": "",
+                "swift": "",
+                "account_no": "12345678-12345678-12345678"
+            }
+        }
+    }
 }
 ```
 
