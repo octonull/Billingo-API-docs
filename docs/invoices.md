@@ -217,6 +217,8 @@ Every item can be set by the gross price. The API will automatically calculate t
 
 `GET /invoices/{id}/download`
 
+Please note that the invoice download endpoint is rate limited for every IP to 10 requests per minute.
+
 ### Parameters
 
 - `id` (string, required) - The Invoice object ID
