@@ -121,6 +121,9 @@ JSON schemas:
             "net_unit_price": 3500,
             "unit": "pc",
 	        "item_comment": "Item comment"
+        },
+        {
+            "product_uid": 1206264827
         }
     ]
 }

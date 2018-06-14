@@ -1,6 +1,10 @@
 # Billingo API Changelog
 
-Current version: 2.1.1
+Current version: 2.2
+
+## Changes since 2.1.1
+
+- Possibility to handle products
 
 ## Changes since 2.1
 
