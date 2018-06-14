@@ -7,6 +7,7 @@ pages:
   - Invoice Query: query.md
   - Clients: clients.md
   - Expenses: expenses.md
+  - Products: products.md
   - Bank accounts: bank_accounts.md
   - Payment methods: payment_methods.md
   - VAT: vat.md
