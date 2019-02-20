@@ -263,6 +263,28 @@ The invoice PDF is returned
 }
 ```
 
+## Cancel invoice
+
+Invoice statuses:
+   - STATUS PAID = 1;
+   - STATUS UNPAID = 2;
+   - STATUS CANCELED = 4;
+
+### Canceled invoice identifying:
+Canceled invoice:
+```json
+   invoice_no: 2019-00001,
+   status: 4, // (2 or 1 for normal invoice)
+```
+   
+Cancel invoice:
+```json
+   invoice_no: 2019-00002,
+   connected_invoice_no: 2019-00001,
+   is_cancel_invoice: 1,
+   status: 1,
+```
+
 ## Send the invoice to the client email address
 
 ### Endpoint
