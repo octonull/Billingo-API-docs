@@ -1,4 +1,7 @@
+version: 2
+
 site_name: Billingo API v2 documentation
+
 pages:
   - Usage: index.md
   - Authentication: auth.md
