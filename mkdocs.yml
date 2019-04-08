@@ -1,4 +1,5 @@
 site_name: Billingo API v2 documentation
+
 pages:
   - Usage: index.md
   - Authentication: auth.md
@@ -14,4 +15,5 @@ pages:
   - Currency: currency.md
   - Libraries: libraries.md
   - Changelog: changelog.md
+
 theme: readthedocs
