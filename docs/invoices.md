@@ -266,11 +266,11 @@ The invoice PDF is returned
 ## Cancel invoice
 
 Invoice statuses:
-   - STATUS PAID = 1;
-   - STATUS UNPAID = 2;
-   - STATUS CANCELED = 4;
+- STATUS PAID = 1;
+- STATUS UNPAID = 2;
+- STATUS CANCELED = 4;
 
-### Canceled invoice identifying:
+### Identifying canceled invoice:
 Canceled invoice:
 ```json
    invoice_no: 2019-00001,
