@@ -123,7 +123,8 @@ JSON schemas:
 	        "item_comment": "Item comment"
         },
         {
-            "product_uid": 1206264827
+            "product_uid": 1206264827,
+            "qty": 1
         }
     ]
 }
