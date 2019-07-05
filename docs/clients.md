@@ -72,7 +72,7 @@ JSON Schema: [https://www.billingo.hu/json/schema/client.json](https://www.billi
 
 ### Notes
 
-If the name and (if given) the taxcode is the same as an already saved client, without modifying it, we return
+If the name, the taxcode, and the billing address is the same as an already saved client, without modifying it, we return
 the original client object. If the optional `force` parameter is set to `true`, the client will be saved regardless
 if it exists or not.
 
