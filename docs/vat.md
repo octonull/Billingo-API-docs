@@ -24,7 +24,8 @@ VAT object representation
          "attributes":{
             "id":"1",
             "value":"0.27",
-            "description":"27%"
+            "description":"27%",
+            "info_text": ""
          }
       },
       {
@@ -32,7 +33,8 @@ VAT object representation
          "attributes":{
             "id":"2",
             "value":"0.05",
-            "description":"5%"
+            "description":"5%",
+            "info_text":  null
          }
       },
       {
@@ -40,7 +42,8 @@ VAT object representation
          "attributes":{
             "id":"3",
             "value":"0.18",
-            "description":"18%"
+            "description":"18%",
+            "info_text":  null
          }
       },
       {
@@ -48,7 +51,8 @@ VAT object representation
          "attributes":{
             "id":"4",
             "value":"0",
-            "description":"AM"
+            "description":"AM",
+            "info_text":  "adómentes"
          }
       },
       {
@@ -56,7 +60,8 @@ VAT object representation
          "attributes":{
             "id":"5",
             "value":"0",
-            "description":"EU"
+            "description":"EU",
+            "info_text":  "EU-n belül"
          }
       }
    ]
@@ -104,3 +109,95 @@ EU based companies whom sell services to EU countries need to apply the buyer co
 - `company` returns company data from the EU registry or null if `vat_code` is not set
 - `tax_rate` the tax rate for the set country
 - `billingo_vat` will return a Billingo vat object that can be used to save an invoice
+
+## Create vat
+
+### Endpoint
+
+`POST /vat`
+
+
+### Request (application/json)
+
+
+```json
+
+{
+    "description": "27%",
+    "value": 0.27,
+    "info_text": "comment"
+}
+```
+
+
+### Response 200 (application/json)
+
+
+```json
+{
+    "success": true,
+    "type": "vat",
+    "data": {
+        "id": 777,
+        "attributes": {
+            "id": 777,
+            "value": 0.27,
+            "description": "27%",
+            "info_text": "comment"
+        }
+    }
+}
+```
+
+
+## Update vat
+
+### Endpoint
+
+`POST /vat/{id}`
+
+
+### Request (application/json)
+
+
+```json
+
+{
+    "description": "27%",
+    "value": 0.27,
+    "info_text": "comment"
+}
+```
+
+
+### Response 200 (application/json)
+
+
+```json
+{
+    "success": true,
+    "type": "vat",
+    "data": {
+        "id": 777,
+        "attributes": {
+            "id": 777,
+            "value": 0.27,
+            "description": "27%",
+            "info_text": "comment"
+        }
+    }
+}
+```
+
+## Delete vat
+
+### Endpoint
+
+`DELETE /api/vat/{id}`
+
+
+### Response 200 (application/json)
+
+```json
+{"success":true}
+```
