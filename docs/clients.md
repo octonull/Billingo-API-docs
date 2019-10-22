@@ -72,9 +72,9 @@ JSON Schema: [https://www.billingo.hu/json/schema/client.json](https://www.billi
 
 ### Notes
 
-If the name, the taxcode, and the billing address is the same as an already saved client, without modifying it, we return
-the original client object. If the optional `force` parameter is set to `true`, the client will be saved regardless
-if it exists or not.
+If the `name`, the `taxcode`, and the billing address is the same as an already saved client, without modifying it, we return the original client object. However for the billing address matching to work properly, it is important that it must be split into `street_name`, `street_type` and `house_nr`.
+
+If the optional `force` parameter is set to `true`, the client will be saved regardless if it exists or not.
 
 ### Request (application/json)
 
