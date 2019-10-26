@@ -4,7 +4,6 @@ pages:
   - Usage: index.md
   - Authentication: auth.md
   - Invoices: invoices.md
-  - Recurring: recurring.md
   - Invoice Query: query.md
   - Clients: clients.md
   - Expenses: expenses.md
