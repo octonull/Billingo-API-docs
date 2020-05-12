@@ -1,9 +1,7 @@
 # Billingo API v2 Usage (depreceted)
 
-.. note::
 
-    This solution is no longer supported. A newer and better API v3.0.0 is ready to use, you can find the [documentation here](https://api.billingo.hu)
-
+.. Caution:: This solution is no longer supported. A newer and better API v3.0.0 is ready to use, you can find the [documentation here](https://api.billingo.hu).
 
 Current version: **2.1.2**
 
@@ -13,7 +11,6 @@ This API enables subscribers of Billingo to connect third-party applications (ie
 and generate electronic or traditional invoices automatically.
 
 The Billingo API is available at the following URL: `https://www.billingo.hu/api`
-
 
 
 ## JSON Schema
