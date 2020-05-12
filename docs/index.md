@@ -1,7 +1,7 @@
 # Billingo API v2 Usage (depreceted)
 
 
-.. Caution:: This solution is no longer supported. A newer and better API v3.0.0 is ready to use, you can find the [documentation here](https://api.billingo.hu).
+**This solution is no longer supported. A newer and better API v3 is ready to use, you can find the [documentation here](https://api.billingo.hu).**
 
 Current version: **2.1.2**
 
