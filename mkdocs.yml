@@ -1,4 +1,4 @@
-site_name: Billingo API v2 documentation
+site_name: Billingo API v2 documentation (deprecated)
 
 pages:
   - Usage: index.md

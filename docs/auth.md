@@ -3,8 +3,6 @@
 The authentication method changed to JSON Web Tokens (JWT for short). The authentication should
 be sent in the `Authorization` HTTP header for **every** call.
 
-
-
 ### JSON Web Tokens
 
 JWT are a standardized ([RFC7519](https://tools.ietf.org/html/rfc7519)) and open way for two parties to share
