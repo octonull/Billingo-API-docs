@@ -17,3 +17,21 @@
     }
 }
 ```
+
+## Get VAT number
+
+### Endpoint
+
+`GET /user/vat-number`
+
+### Response 200 (application/json)
+
+```json
+{
+    "success": true,
+    "type": "user",
+    "data": {
+        "vat-number": "12345678-2-10"
+    }
+}
+```
