@@ -22,7 +22,7 @@
 
 ### Endpoint
 
-`GET /user/vat-number`
+`GET /user/tax-code`
 
 ### Response 200 (application/json)
 
@@ -31,7 +31,7 @@
     "success": true,
     "type": "user",
     "data": {
-        "vat-number": "12345678-2-10"
+        "tax_code": "12345678-2-10"
     }
 }
 ```
