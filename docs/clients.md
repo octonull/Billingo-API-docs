@@ -57,7 +57,8 @@ JSON Schema: [https://www.billingo.hu/json/schema/client.json](https://www.billi
                     "iban":"",
                     "swift":"",
                     "account_no":""
-                }
+                },
+                "tax_type": ""
             }
         }
     ]
@@ -103,6 +104,7 @@ If the optional `force` parameter is set to `true`, the client will be saved reg
         "iban": "", 
         "swift": ""
     },
+    "tax_type": "",
     "fokonyv_szam": "", 
     "type": "2", 
     "defaults": {
@@ -154,7 +156,8 @@ If the optional `force` parameter is set to `true`, the client will be saved reg
                 "iban": "",
                 "swift": "",
                 "account_no": "12345678-12345678-12345678"
-            }
+            },
+            "tax_type": ""
         }
     }
 }
@@ -201,6 +204,7 @@ On success it returns the modified client object.
         "iban": "", 
         "swift": ""
     },
+    "tax_type": "",
     "fokonyv_szam": "", 
     "type": "2", 
     "defaults": {
@@ -252,7 +256,8 @@ On success it returns the modified client object.
                 "iban": "",
                 "swift": "",
                 "account_no": "12345678-12345678-12345678"
-            }
+            },
+            "tax_type": ""
         }
     }
 }

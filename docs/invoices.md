@@ -74,7 +74,8 @@ JSON schemas:
                   "iban":"",
                   "swift":"",
                   "account_no":""
-               }
+               },
+               "tax_type": ""
             },
            "payment_method": {
              "id": 2,
