@@ -77,6 +77,8 @@ If the `name`, the `taxcode`, and the billing address is the same as an already 
 
 If the optional `force` parameter is set to `true`, the client will be saved regardless if it exists or not.
 
+The `tax_type` parameter accepts the following values: "", "FOREIGN", "HAS_TAX_NUMBER", "NO_TAX_NUMBER"
+
 ### Request (application/json)
 
 ```json
