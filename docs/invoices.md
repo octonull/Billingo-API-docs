@@ -37,6 +37,7 @@ JSON schemas:
             "fulfillment_date":"2012-07-30",
             "due_date":"2015-08-07",
             "invoice_no":"2015-000001",
+            "prefixed_invoice_no":"TST2015-000001",
             "total":"4445.000",
             "total_paid":"0.000",
             "comment":"",
@@ -77,12 +78,13 @@ JSON schemas:
                },
                "tax_type": ""
             },
-           "payment_method": {
-             "id": 2,
-             "lang_code": "hu",
-             "name": "Átutalás",
-             "advance_paid": "0"
-        	}
+            "payment_method": {
+              "id": 2,
+              "lang_code": "hu",
+              "name": "Átutalás",
+              "advance_paid": "0"
+            },
+            "prefix": "TST"
          }
       }
    ]
@@ -162,7 +164,7 @@ JSON schemas:
 ```
 
 ### Setting by gross price
-Every item can be set by the gross price. The API will automatically calculate the net unit price from the gross unit price based on the given VAT ID. Set the `gross_unit_price` parameter instead of the `net_unit_price`.  
+Every item can be set by the gross price. The API will automatically calculate the net unit price from the gross unit price based on the given VAT ID. Set the `gross_unit_price` parameter instead of the `net_unit_price`.
 
 ### Invoice types
 
@@ -280,7 +282,7 @@ Canceled invoice:
    invoice_no: 2019-00001,
    status: 4, // (2 or 1 for normal invoice)
 ```
-   
+
 Cancel invoice:
 ```json
    invoice_no: 2019-00002,
