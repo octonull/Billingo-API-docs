@@ -37,7 +37,7 @@ JSON schemas:
             "fulfillment_date":"2012-07-30",
             "due_date":"2015-08-07",
             "invoice_no":"2015-000001",
-            "prefixed_invoice_no":"TST2015-000001",
+            "prefixed_invoice_no":"TST / 2015-000001",
             "total":"4445.000",
             "total_paid":"0.000",
             "comment":"",
