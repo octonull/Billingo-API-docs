@@ -52,7 +52,8 @@ JSON schemas:
                   "qty":"1.000",
                   "unit":"db",
                   "vat_id":"1",
-                  "item_comment":""
+                  "item_comment":"",
+                  "entitlement": null
                }
             ],
             "client":{
@@ -123,7 +124,8 @@ JSON schemas:
             "qty": 1,
             "net_unit_price": 3500,
             "unit": "pc",
-	        "item_comment": "Item comment"
+            "item_comment": "Item comment",
+            "entitlement": null
         },
         {
             "product_uid": 1206264827,

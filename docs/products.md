@@ -62,7 +62,8 @@ JSON Schema: [https://www.billingo.hu/json/schema/product.json](https://www.bill
           "id": 1,
           "value": 0.27,
           "description": "27%"
-        }
+        },
+        "entitlement": null
       }
     }
   ]
@@ -89,6 +90,7 @@ JSON Schema: [https://www.billingo.hu/json/schema/product.json](https://www.bill
     "vat_id": 1,
     "fokonyv_arbev": 0,
     "fokonyv_afa": 0,
+    "entitlement": ""
 }
 ```
 
@@ -111,7 +113,8 @@ JSON Schema: [https://www.billingo.hu/json/schema/product.json](https://www.bill
       "fokonyv_arbev": "",
       "fokonyv_afa": "",
       "updated_at": "2017-10-04 15:26:26",
-      "created_at": "2017-10-04 15:26:26"
+      "created_at": "2017-10-04 15:26:26",
+      "entitlement": null
     }
   }
 }
@@ -176,7 +179,8 @@ JSON Schema: [https://www.billingo.hu/json/schema/product.json](https://www.bill
         "id": 1,
         "value": 0.27,
         "description": "27%"
-      }
+      },
+      "entitlement": null
     }
   }
 }

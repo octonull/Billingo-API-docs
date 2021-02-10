@@ -43,3 +43,21 @@ following attributes:
 
 If failing to insert or update objects (when JSON schema is otherwise valid), we
 also return a `errors` array with the failures.
+
+## Entitlement
+
+- `TRAVEL_AGENCY`: Különbözet szerinti szabályozás - utazási irodák -
+- `SECOND_HAND`: Különbözet szerinti szabályozás - használt cikkek -
+- `ARTWORK`: Különbözet szerinti szabályozás - műalkotások -
+- `ANTIQUES`: Különbözet szerinti szabályozás - gyűjteménydarabok és régiségek -
+- `AAM`: Alanyi adómentesség
+- `TAM`: Tevékenység közérdekű jellegére vagy egyéb sajátos jellegére tekintettel áfamentes (Áfa tv. 85-87.§)
+- `KBAET`: Más tagállamba irányuló áfamentes termékértékesítés (Áfa tv. 89. §)
+- `EAM`: Áfamentes termékexport, azzal egy tekintet alá eső értékesítések, nemzetközi közlekedéshez kapcsolódó áfamentes ügyletek (Áfa tv. 98-109. §)
+- `NAM_1`: Áfamentes közvetítői tevékenység (Áfa tv. 110. §)
+- `NAM_2`: Termékek nemzetközi forgalmához kapcsolódó áfamentes ügylet (Áfa tv. 111-118. §)
+- `ATK`: Áfa tv. tárgyi hatályán kívüli ügylet
+- `EUFAD37`: Áfa tv. 37. § (1) bekezdése alapján a szolgáltatás teljesítése helye az EU más tagállama (áfa fizetésére a vevő köteles)
+- `EUFADE`: Áfa tv. szerint egyéb rendelkezése szerint a teljesítés helye EU más tagállama (áfa fizetésére a vevő köteles)
+- `EUE`: EU más tagállamában áfaköteles (áfa fizetésére az értékesítő köteles)
+- `HO`: Áfa tv. szerint EU-n kívül teljesített ügylet
