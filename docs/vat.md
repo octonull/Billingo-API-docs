@@ -110,3 +110,4 @@ EU based companies whom sell services to EU countries need to apply the buyer co
 - `tax_rate` the tax rate for the set country
 - `billingo_vat` will return a Billingo vat object that can be used to save an invoice
 
+
