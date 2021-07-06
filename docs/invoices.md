@@ -324,7 +324,8 @@ Cancel invoice:
 {
     "date": "2017-01-01",
     "amount": 12300,
-    "payment_method": 2
+    "payment_method": 2,
+    "conversion_rate": 1
 }
 ```
 
